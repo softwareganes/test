@@ -60,10 +60,11 @@
             flex-shrink: 0;
         }
 
-        .brand-badge svg {
+        .brand-badge img {
             width: 100%;
             height: 100%;
             display: block;
+            object-fit: contain;
         }
 
         nav ul {
@@ -125,6 +126,7 @@
             height: auto;
             display: block;
             filter: drop-shadow(0 24px 20px rgba(23, 43, 112, 0.18));
+            object-fit: contain;
         }
 
         .hero h1 {
@@ -549,50 +551,9 @@
     <nav>
         <div class="container">
             <a href="#" class="logo" aria-label="Software Ganes home">
-                <svg class="brand-badge" viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Software Ganes SG brand logo">
-                    <defs>
-                        <linearGradient id="sgBlue" x1="0%" x2="100%" y1="0%" y2="100%">
-                            <stop offset="0%" stop-color="#0d4fc8"/>
-                            <stop offset="50%" stop-color="#0d69d6"/>
-                            <stop offset="100%" stop-color="#0c8ed9"/>
-                        </linearGradient>
-                        <linearGradient id="sgDark" x1="0%" x2="100%" y1="0%" y2="100%">
-                            <stop offset="0%" stop-color="#123d9b"/>
-                            <stop offset="100%" stop-color="#0f2f78"/>
-                        </linearGradient>
-                    </defs>
-
-                    <circle cx="450" cy="450" r="420" fill="#ffffff" stroke="url(#sgBlue)" stroke-width="22"/>
-
-                    <g transform="translate(0 -10)">
-                        <path d="M620 208c-27-24-58-35-94-35-44 0-80 17-106 50-11 14-18 30-21 48 15-12 32-18 51-18 36 0 65 15 90 46l17 19 37-14c15-6 32-9 49-9 22 0 43 6 62 19-9 10-18 19-30 27-19 13-39[...]
-                        <path d="M620 250c-26-25-58-38-96-38-64 0-118 42-132 102-6 23-3 47 10 67 18 29 50 49 89 56 15 3 30 5 46 5 27 0 51-5 73-16l12 29c-17 9-38 17-62 22-44 9-88 5-127-13-56-25-92-77-9[...]
-                        <path d="M380 178l72 20 22-27 73 14 26 49 78-24-22 81 35 35-66 26-55-41-50 47-61-25-15-50-71-18 41-66 32-26z" fill="#0d57d8" opacity="0.78"/>
-                        <path d="M452 176c-93 13-161 92-161 188 0 38 11 73 32 102 13 17 29 31 49 41 23 12 50 18 80 18 55 0 103-18 140-52 32-30 52-73 52-118 0-44-20-84-52-115-35-31-81-48-140-64z" fill=[...]
-                        <path d="M409 190c34 0 60 10 79 31 19 20 28 47 28 78 0 30-9 56-28 77-19 21-45 32-79 32-31 0-58-10-78-30-20-20-30-47-30-79 0-34 10-61 31-82 20-21 48-32 77-31zm-7 44c-23 0-41 9-5[...]
-                        <path d="M467 255c18 0 32 14 32 32s-14 32-32 32-32-14-32-32 14-32 32-32zm-32 49c14 0 27 11 27 25s-13 25-27 25c-15 0-27-11-27-25s12-25 27-25zm16-31c-8-20-15-42-15-65v-11h57v11c0[...]
-                        <path d="M365 207c-10-18-24-33-40-45-8-6-17-11-27-16 18 3 32 10 43 22 14 15 20 31 24 39z" fill="#0d57d8" opacity="0.9"/>
-                        <path d="M536 188c11-16 27-30 48-42-2 16-10 30-24 43-12 11-25 20-39 28 4-9 8-17 15-29z" fill="#0d57d8" opacity="0.9"/>
-                        <path d="M443 311c-18-13-30-31-36-52 24 9 48 24 71 45-11 23-23 38-35 47-23 17-48 27-75 31 10 9 21 17 34 24 18 9 39 14 65 15 18 0 35-2 52-8 17-6 32-14 46-26-15-16-27-35-36-58-15[...]
-                        <path d="M430 325c-10 2-18 11-20 21 0 9 5 18 13 23 7 4 14 6 21 6 25 0 52-19 58-39 7-24-7-40-25-47-4-1-10-2-17-1-11 1-21 8-27 20 7-5 15-10 24-13-8 11-15 21-27 30z" fill="#ffffff[...]
-                        <path d="M576 301c20 15 39 34 56 56-20-7-39-19-56-35-13-12-24-25-34-39 12 5 23 11 34 18z" fill="#0d57d8" opacity="0.9"/>
-                        <path d="M269 280c10 34 17 67 18 101-19-7-38-18-56-31-15-11-28-25-38-41 15-10 31-17 49-21 10-3 19-6 27-8z" fill="#0d57d8" opacity="0.9"/>
-                        <path d="M607 416c18 11 36 23 53 38 20 18 36 32 47 41l-17 18c-19-5-35-15-48-30-17-20-36-40-62-57 8-7 17-13 27-10z" fill="#0d57d8" opacity="0.9"/>
-                        <path d="M327 438c-21 18-39 40-51 66 26-7 46-22 62-43 15-20 23-39 25-58 12 9 22 19 30 31-12 1-43 21-66 4z" fill="#0d57d8" opacity="0.9"/>
-                    </g>
-
-                    <text x="235" y="502" font-size="330" font-weight="900" letter-spacing="-20" fill="url(#sgDark)" font-family="Segoe UI, Arial Black, sans-serif" opacity="0.98">S</text>
-                    <text x="485" y="502" font-size="330" font-weight="900" letter-spacing="-20" fill="url(#sgBlue)" font-family="Segoe UI, Arial Black, sans-serif" opacity="0.98">G</text>
-
-                    <text x="450" y="638" text-anchor="middle" font-size="82" font-weight="800" letter-spacing="-1.5" fill="#0c3d9f" font-family="Segoe UI, Arial, sans-serif">Software Ganes</text>
-
-                    <g transform="translate(0 8)">
-                        <path d="M250 700h130" stroke="#0d57d8" stroke-width="10" stroke-linecap="round"/>
-                        <path d="M385 700l25 25 25-25" fill="none" stroke="#0d57d8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M520 700h130" stroke="#0d57d8" stroke-width="10" stroke-linecap="round"/>
-                        <path d="M490 700l-25 25-25-25" fill="none" stroke="#0d57d8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </g>
-                </svg>
+                <div class="brand-badge">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='goldGrad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FFD700;stop-opacity:1'/%3E%3Cstop offset='50%25' style='stop-color:%23FFA500;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%23FF8C00;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='200' cy='200' r='190' fill='%23000000' stroke='url(%23goldGrad)' stroke-width='16'/%3E%3Cg transform='translate(60, 80)'%3E%3Ctext x='0' y='100' font-size='140' font-weight='900' fill='%23FFFFFF' font-family='Arial, sans-serif' letter-spacing='8'%3ES%3C/text%3E%3Ctext x='130' y='100' font-size='140' font-weight='900' fill='url(%23goldGrad)' font-family='Arial, sans-serif' letter-spacing='8'%3EG%3C/text%3E%3C/g%3E%3C/svg%3E" alt="Software Ganes Logo">
+                </div>
                 <span>Software Ganes</span>
             </a>
             <ul>
@@ -607,7 +568,7 @@
     <section class="hero">
         <div class="container hero-inner">
             <div class="hero-visual">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%230d4fc8;stop-opacity:1'/%3E%3Cstop offset='50%25' style='stop-color:%230d69d6;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%230c8ed9;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='200' cy='200' r='190' fill='white' stroke='url(%23grad)' stroke-width='16'/%3E%3Cpath d='M150 140c33-40 90-58 148-46 36 7 70 28 92 58l-45 32c-19-24-47-39-78-42-24-3-52 2-75 17l-42-19zM147 164l58 25 49-41 42 36 54-18 36 42-51 58-39 14-52-19-47 18-38-14-17-50 45-11z' fill='%230d4fc8' opacity='0.9'/%3E%3Ctext x='80' y='240' font-size='120' font-weight='900' fill='%23123d9b' font-family='Segoe UI, Arial Black, sans-serif'%3ES%3C/text%3E%3Ctext x='190' y='240' font-size='120' font-weight='900' fill='%230d69d6' font-family='Segoe UI, Arial Black, sans-serif'%3EG%3C/text%3E%3C/svg%3E" alt="Software Ganes Logo">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='goldGrad2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FFD700;stop-opacity:1'/%3E%3Cstop offset='50%25' style='stop-color:%23FFA500;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%23FF8C00;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='200' cy='200' r='190' fill='%23000000' stroke='url(%23goldGrad2)' stroke-width='20'/%3E%3Cg transform='translate(50, 70)'%3E%3Ctext x='0' y='130' font-size='180' font-weight='900' fill='%23FFFFFF' font-family='Arial, sans-serif' letter-spacing='10'%3ES%3C/text%3E%3Ctext x='160' y='130' font-size='180' font-weight='900' fill='url(%23goldGrad2)' font-family='Arial, sans-serif' letter-spacing='10'%3EG%3C/text%3E%3C/g%3E%3C/svg%3E" alt="Software Ganes Logo">
             </div>
             <div class="hero-copy">
                 <h1>Boost Your Business with Digital Marketing</h1>
