@@ -17,6 +17,7 @@
             color: #333;
         }
 
+        /* Navigation */
         nav {
             background: linear-gradient(90deg, #4b5ed6 0%, #7d5fd7 50%, #8a4ca8 100%);
             padding: 0.7rem 2rem;
@@ -46,7 +47,9 @@
             transition: opacity 0.3s;
         }
 
-        nav .logo:hover { opacity: 0.8; }
+        nav .logo:hover {
+            opacity: 0.8;
+        }
 
         .brand-badge {
             width: 56px;
@@ -80,7 +83,9 @@
             font-weight: 600;
         }
 
-        nav a:hover { opacity: 0.8; }
+        nav a:hover {
+            opacity: 0.8;
+        }
 
         .container {
             max-width: 1200px;
@@ -88,6 +93,7 @@
             padding: 0 2rem;
         }
 
+        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
             color: white;
@@ -103,7 +109,9 @@
             text-align: left;
         }
 
-        .hero-copy { flex: 1; }
+        .hero-copy {
+            flex: 1;
+        }
 
         .hero-visual {
             flex: 0 0 420px;
@@ -172,6 +180,7 @@
             color: #667eea;
         }
 
+        /* Services Section */
         .services {
             padding: 80px 2rem;
             background: #f8f9fa;
@@ -220,6 +229,7 @@
             line-height: 1.8;
         }
 
+        /* Features Section */
         .features {
             padding: 80px 2rem;
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
@@ -250,6 +260,7 @@
             font-size: 1.2rem;
         }
 
+        /* Pricing Section */
         .pricing {
             padding: 80px 2rem;
             background: white;
@@ -295,7 +306,9 @@
             color: #667eea;
         }
 
-        .pricing-card.featured .price { color: white; }
+        .pricing-card.featured .price {
+            color: white;
+        }
 
         .pricing-card ul {
             list-style: none;
@@ -312,6 +325,7 @@
             border-bottom-color: rgba(255, 255, 255, 0.3);
         }
 
+        /* Contact Section */
         .contact {
             padding: 40px 2rem;
             background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
@@ -333,7 +347,9 @@
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
         }
 
-        .form-group { margin-bottom: 0.7rem; }
+        .form-group {
+            margin-bottom: 0.7rem;
+        }
 
         .form-group label {
             display: block;
@@ -412,6 +428,7 @@
             display: block;
         }
 
+        /* Footer */
         footer {
             background: #1a1a1a;
             color: white;
@@ -431,55 +448,104 @@
         .contact-info a {
             color: #667eea;
             text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
             transition: all 0.3s ease;
         }
 
         .contact-info a:hover {
             text-decoration: underline;
-            transform: scale(1.05);
         }
 
-        .whatsapp-icon {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-        }
-
+        /* Animations */
         @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes slideUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
-            nav { padding: 0.6rem 1rem; }
-            nav ul { gap: 1rem; }
-            nav ul a { font-size: 0.9rem; }
-            .brand-badge { width: 48px; height: 48px; }
-            nav .logo { font-size: 1.4rem; gap: 0.6rem; }
-            .hero-inner { flex-direction: column; text-align: center; }
-            .hero h1 { font-size: 2.2rem; }
-            .hero p { font-size: 1.1rem; }
-            .hero-visual { flex-basis: auto; width: 100%; }
-            .hero-buttons { justify-content: center; flex-direction: column; }
-            .btn { width: 100%; }
-            .pricing-card.featured { transform: scale(1); }
+            nav {
+                padding: 0.6rem 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            nav ul a {
+                font-size: 0.9rem;
+            }
+
+            .brand-badge {
+                width: 48px;
+                height: 48px;
+            }
+
+            nav .logo {
+                font-size: 1.4rem;
+                gap: 0.6rem;
+            }
+
+            .hero-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-visual {
+                flex-basis: auto;
+                width: 100%;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
         <div class="container">
             <a href="#" class="logo" aria-label="Software Ganes home">
@@ -495,20 +561,37 @@
                             <stop offset="100%" stop-color="#0f2f78"/>
                         </linearGradient>
                     </defs>
+
                     <circle cx="450" cy="450" r="420" fill="#ffffff" stroke="url(#sgBlue)" stroke-width="22"/>
+
                     <g transform="translate(0 -10)">
-                        <path d="M620 208c-27-24-58-35-94-35-44 0-80 17-106 50-11 14-18 30-21 48 15-12 32-18 51-18 36 0 65 15 90 46l17 19 37-14c15-6 32-9 49-9 22 0 43 6 62 19-9 10-18 19-30 27-19 13-39 18-60 21-7 1-13 2-20 3l-13 25-27-19-20 21-12 23-12-9-20 7-26 24-26-38 15-42-21-25-23-16 17-17-21-27 18-13 15-30 18-16 27-13z" fill="#0d57d8" opacity="0.8"/>
-                        <path d="M620 250c-26-25-58-38-96-38-64 0-118 42-132 102-6 23-3 47 10 67 18 29 50 49 89 56 15 3 30 5 46 5 27 0 51-5 73-16l12 29c-17 9-38 17-62 22-44 9-88 5-127-13-56-25-92-77-94-138-1-26 4-51 19-73 29-44 84-71 149-68 33 2 63 12 91 31 16 11 30 25 41 41l-26 20z" fill="#0d57d8" opacity="0.7"/>
+                        <path d="M620 208c-27-24-58-35-94-35-44 0-80 17-106 50-11 14-18 30-21 48 15-12 32-18 51-18 36 0 65 15 90 46l17 19 37-14c15-6 32-9 49-9 22 0 43 6 62 19-9 10-18 19-30 27-19 13-39[...]
+                        <path d="M620 250c-26-25-58-38-96-38-64 0-118 42-132 102-6 23-3 47 10 67 18 29 50 49 89 56 15 3 30 5 46 5 27 0 51-5 73-16l12 29c-17 9-38 17-62 22-44 9-88 5-127-13-56-25-92-77-9[...]
                         <path d="M380 178l72 20 22-27 73 14 26 49 78-24-22 81 35 35-66 26-55-41-50 47-61-25-15-50-71-18 41-66 32-26z" fill="#0d57d8" opacity="0.78"/>
-                        <path d="M452 176c-93 13-161 92-161 188 0 38 11 73 32 102 13 17 29 31 49 41 23 12 50 18 80 18 55 0 103-18 140-52 32-30 52-73 52-118 0-44-20-84-52-115-35-31-81-48-140-64z" fill="#ffffff"/>
-                        <path d="M404 191c36 0 66 11 86 34 19 21 29 49 29 82 0 30-9 57-28 79-18 22-45 33-80 33-31 0-58-10-78-30-20-20-31-47-31-79 0-33 11-61 33-82 22-21 49-32 69-37zm-9 45c-22 0-39 9-50 28-10 18-15 40-15 67 0 29 6 52 18 69 12 17 29 26 51 26 20 0 37-8 49-24 12-17 18-39 18-66 0-30-7-54-20-71-14-17-31-26-51-29z" fill="#0d57d8" opacity="0.85"/>
-                        <path d="M470 255c18 0 32 14 32 32s-14 32-32 32-32-14-32-32 14-32 32-32zm-32 49c14 0 27 11 27 25s-13 25-27 25c-15 0-27-11-27-25s12-25 27-25zm16-31c-8-20-15-42-15-65v-11h57v11c0 23-7 45-15 65l-27 0z" fill="#0d57d8"/>
-                        <path d="M367 209c-10-18-24-33-40-45-8-6-17-11-27-16 18 3 32 10 43 22 14 15 20 31 24 39z" fill="#0d57d8" opacity="0.9"/>
+                        <path d="M452 176c-93 13-161 92-161 188 0 38 11 73 32 102 13 17 29 31 49 41 23 12 50 18 80 18 55 0 103-18 140-52 32-30 52-73 52-118 0-44-20-84-52-115-35-31-81-48-140-64z" fill=[...]
+                        <path d="M409 190c34 0 60 10 79 31 19 20 28 47 28 78 0 30-9 56-28 77-19 21-45 32-79 32-31 0-58-10-78-30-20-20-30-47-30-79 0-34 10-61 31-82 20-21 48-32 77-31zm-7 44c-23 0-41 9-5[...]
+                        <path d="M467 255c18 0 32 14 32 32s-14 32-32 32-32-14-32-32 14-32 32-32zm-32 49c14 0 27 11 27 25s-13 25-27 25c-15 0-27-11-27-25s12-25 27-25zm16-31c-8-20-15-42-15-65v-11h57v11c0[...]
+                        <path d="M365 207c-10-18-24-33-40-45-8-6-17-11-27-16 18 3 32 10 43 22 14 15 20 31 24 39z" fill="#0d57d8" opacity="0.9"/>
                         <path d="M536 188c11-16 27-30 48-42-2 16-10 30-24 43-12 11-25 20-39 28 4-9 8-17 15-29z" fill="#0d57d8" opacity="0.9"/>
+                        <path d="M443 311c-18-13-30-31-36-52 24 9 48 24 71 45-11 23-23 38-35 47-23 17-48 27-75 31 10 9 21 17 34 24 18 9 39 14 65 15 18 0 35-2 52-8 17-6 32-14 46-26-15-16-27-35-36-58-15[...]
+                        <path d="M430 325c-10 2-18 11-20 21 0 9 5 18 13 23 7 4 14 6 21 6 25 0 52-19 58-39 7-24-7-40-25-47-4-1-10-2-17-1-11 1-21 8-27 20 7-5 15-10 24-13-8 11-15 21-27 30z" fill="#ffffff[...]
+                        <path d="M576 301c20 15 39 34 56 56-20-7-39-19-56-35-13-12-24-25-34-39 12 5 23 11 34 18z" fill="#0d57d8" opacity="0.9"/>
+                        <path d="M269 280c10 34 17 67 18 101-19-7-38-18-56-31-15-11-28-25-38-41 15-10 31-17 49-21 10-3 19-6 27-8z" fill="#0d57d8" opacity="0.9"/>
+                        <path d="M607 416c18 11 36 23 53 38 20 18 36 32 47 41l-17 18c-19-5-35-15-48-30-17-20-36-40-62-57 8-7 17-13 27-10z" fill="#0d57d8" opacity="0.9"/>
+                        <path d="M327 438c-21 18-39 40-51 66 26-7 46-22 62-43 15-20 23-39 25-58 12 9 22 19 30 31-12 1-43 21-66 4z" fill="#0d57d8" opacity="0.9"/>
                     </g>
+
                     <text x="235" y="502" font-size="330" font-weight="900" letter-spacing="-20" fill="url(#sgDark)" font-family="Segoe UI, Arial Black, sans-serif" opacity="0.98">S</text>
                     <text x="485" y="502" font-size="330" font-weight="900" letter-spacing="-20" fill="url(#sgBlue)" font-family="Segoe UI, Arial Black, sans-serif" opacity="0.98">G</text>
+
                     <text x="450" y="638" text-anchor="middle" font-size="82" font-weight="800" letter-spacing="-1.5" fill="#0c3d9f" font-family="Segoe UI, Arial, sans-serif">Software Ganes</text>
+
+                    <g transform="translate(0 8)">
+                        <path d="M250 700h130" stroke="#0d57d8" stroke-width="10" stroke-linecap="round"/>
+                        <path d="M385 700l25 25 25-25" fill="none" stroke="#0d57d8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M520 700h130" stroke="#0d57d8" stroke-width="10" stroke-linecap="round"/>
+                        <path d="M490 700l-25 25-25-25" fill="none" stroke="#0d57d8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
                 </svg>
                 <span>Software Ganes</span>
             </a>
@@ -520,6 +603,7 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-inner">
             <div class="hero-visual">
@@ -536,6 +620,7 @@
         </div>
     </section>
 
+    <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
             <h2>Our Services</h2>
@@ -559,6 +644,7 @@
         </div>
     </section>
 
+    <!-- Features Section -->
     <section class="features">
         <div class="container">
             <h2>Why Choose Us?</h2>
@@ -591,6 +677,7 @@
         </div>
     </section>
 
+    <!-- Pricing Section -->
     <section class="pricing" id="pricing">
         <div class="container">
             <h2>Affordable Pricing Plans</h2>
@@ -622,63 +709,59 @@
                 <div class="pricing-card">
                     <h3>Enterprise</h3>
                     <p>For large organizations</p>
-                    <div class=\"price\">Custom<span style=\"font-size: 0.5em;\">/month</span></div>
+                    <div class="price">Custom<span style="font-size: 0.5em;">/month</span></div>
                     <ul>
                         <li>✓ Unlimited Emails</li>
                         <li>✓ Premium Analytics</li>
                         <li>✓ 24/7 Dedicated Support</li>
                         <li>✓ Custom Website + Design</li>
                     </ul>
-                    <a href=\"#contact\" class=\"btn btn-primary\">Contact Us</a>
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class=\"contact\" id=\"contact\">
-        <div class=\"container\">
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
             <h2>Get In Touch With Us</h2>
-            <div class=\"contact-container\">
-                <div id=\"message\" class=\"message\"></div>
-                <form id=\"contactForm\">
-                    <div class=\"form-group\">
-                        <label for=\"name\">Your Name *</label>
-                        <input type=\"text\" id=\"name\" name=\"name\" required>
+            <div class="contact-container">
+                <div id="message" class="message"></div>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                    <div class=\"form-group\">
-                        <label for=\"email\">Your Email *</label>
-                        <input type=\"email\" id=\"email\" name=\"email\" required>
+                    <div class="form-group">
+                        <label for="email">Your Email *</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
-                    <div class=\"form-group\">
-                        <label for=\"phone\">Phone Number</label>
-                        <input type=\"tel\" id=\"phone\" name=\"phone\">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
                     </div>
-                    <div class=\"form-group\">
-                        <label for=\"subject\">Subject *</label>
-                        <input type=\"text\" id=\"subject\" name=\"subject\" required>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
                     </div>
-                    <div class=\"form-group\">
-                        <label for=\"message_text\">Message *</label>
-                        <textarea id=\"message_text\" name=\"message\" required></textarea>
+                    <div class="form-group">
+                        <label for="message_text">Message *</label>
+                        <textarea id="message_text" name="message" required></textarea>
                     </div>
-                    <button type=\"submit\" class=\"submit-btn\">Send Message</button>
+                    <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <div class=\"container\">
+        <div class="container">
             <h3>Software Ganes</h3>
             <p>Your trusted partner for bulk mailing, WhatsApp marketing, and professional web design</p>
-            <div class=\"contact-info\">
-                <p>📧 Email: <a href=\"mailto:softwareganes@gmail.com\">softwareganes@gmail.com</a></p>
-                <p>📞 WhatsApp: <a href=\"https://wa.me/919876167511\" target=\"_blank\">
-                    <svg class=\"whatsapp-icon\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\">
-                        <path d=\"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.953 1.226l-.356.214-3.675-.964.984 3.202-.214.338A9.879 9.879 0 5.359 2.575h.004zm8.143 13.471c-1.338 0-2.6-.388-3.736-1.127l-.268-.161-2.779.729.74-2.701-.175-.277a9.915 9.915 0 1 1 6.218 3.137z\"/>
-                    </svg>
-                    +91 98761 67511
-                </a></p>
+            <div class="contact-info">
+                <p>📧 Email: <a href="mailto:softwareganes@gmail.com">softwareganes@gmail.com</a> | 📞 WhatsApp: <a href="https://wa.me/919876167511" target="_blank">+91 98761 67511</a></p>
                 <p>📍 Based in India | Serving Worldwide</p>
                 <p>🏢 Headquarters/Address: Unit No. 204, 2nd Floor, Phase 1, South City Businesspark, 770, Anandpur, Kolkata - 700107, West Bengal, India</p>
                 <p>&copy; 2024 Software Ganes. All rights reserved.</p>
@@ -687,6 +770,10 @@
     </footer>
 
 <script>
+    // ==========================================
+    // SOFTWARE GANES - CONTACT FORM WITH WEB3FORMS
+    // ==========================================
+
     const contactForm = document.getElementById('contactForm');
     const messageDiv = document.getElementById('message');
 
@@ -698,6 +785,7 @@
         submitBtn.textContent = 'Sending...';
 
         const formData = new FormData();
+
         formData.append('access_key', 'e725e10f-3ee6-4eed-8cc2-5ee7bc547fad');
         formData.append('name', document.getElementById('name').value);
         formData.append('email', document.getElementById('email').value);
@@ -722,6 +810,7 @@
                 messageDiv.className = 'message error';
                 console.error(result);
             }
+
         } catch (error) {
             messageDiv.textContent = '✗ Error sending message. Please try again or email us directly.';
             messageDiv.className = 'message error';
@@ -731,25 +820,39 @@
         submitBtn.disabled = false;
         submitBtn.textContent = 'Send Message';
 
+        // Hide message after 5 seconds
         setTimeout(() => {
             messageDiv.className = 'message';
             messageDiv.textContent = '';
         }, 5000);
     });
 
+
+    // ==========================================
+    // SMOOTH SCROLLING
+    // ==========================================
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
         anchor.addEventListener('click', function(e) {
+
             e.preventDefault();
 
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(
+                this.getAttribute('href')
+            );
 
             if (target) {
+
                 target.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
                 });
+
             }
+
         });
+
     });
 </script>
 </body>
